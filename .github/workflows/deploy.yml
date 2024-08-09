@@ -10,12 +10,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Connect deploy key
-        uses: cloudtype-github-actions/connect@v1
+        uses: cloudtype-github-actions/connect@v2
         with:
           token: ${{ secrets.CLOUDTYPE_TOKEN }}
           ghtoken: ${{ secrets.GHP_TOKEN }}
       - name: Deploy
-        uses: cloudtype-github-actions/deploy@v1
+        uses: cloudtype-github-actions/deploy@v2
         with:
           token: ${{ secrets.CLOUDTYPE_TOKEN }}
           project: alsfkr23/cloudtestweb
