@@ -25,7 +25,6 @@ jobs:
             app: java@17
             options:
               ports: "1033"
-              nodeversion: 14
               env: []
               buildenv: []
             context:
