@@ -6,9 +6,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x, 18.x]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -28,6 +25,7 @@ jobs:
             app: java@17
             options:
               ports: "1033"
+              nodeversion: 14
               env: []
               buildenv: []
             context:
